@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const compras = [
+            { produto: "Celular", valor: 1500 },
+            { produto: "Notebook", valor: 3000 },
+            { produto: "Fone de ouvido", valor: 200 },
+            { produto: "Mouse", valor: 100 }
+        ];
+
+        const valorTotal = compras.reduce((acumulador, compra) => acumulador + compra.valor, 0);
+
+        console.log(valorTotal);
+    </script>
+</body>
+</html>
