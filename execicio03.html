@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>
+        Dado um array de números, use o reduce para encontrar o maior número no array
+    </h2>
+
+    <script>
+        const numeros = [10, 5, 8, 20, 3];
+
+        const maiorNumero = numeros.reduce((acumulador, valorAtual) => {
+           return acumulador > valorAtual ? acumulador : valorAtual;
+        }, numeros[0]);
+
+        console.log(maiorNumero);
+
+    </script>
+</body>
+</html>
